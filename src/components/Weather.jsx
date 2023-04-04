@@ -3,7 +3,6 @@ import "./weather.css";
 import GetTime from "./GetTime";
 
 const Wheater = ({ weather , temp }) => {
-  console.log(weather)
   const [temperature, setTemperature] = useState([(temp-273.15), `C`])
   const handleChangeUnit = () => {
     temperature[1] == `C`

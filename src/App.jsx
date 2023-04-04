@@ -63,11 +63,10 @@ function App() {
     "Drizzle" : "/img/bg/Drizzle.jpg",
     "Thunderstorm" : "/img/bg/thunderstorm.jpg",
   }
-
-    
+  console.log(background[bg])
   return (
 
-    <div className={`App  min-h-screen  bg-[url(${background[bg]})]`}>
+    <div  className={`App  min-h-screen`} style={{backgroundImage: `url(${background[bg]})`}}>
       <img src={`${background[bg]}`} alt="" loading="lazy" className="hidden"></img>
       <form onSubmit={handleSearchCity} className="flex gap-1 mb-20 sm:min-w-[450px] " >
         <input className="text-2xl rounded-lg" placeholder="Search a city" type="text" id="city" />
