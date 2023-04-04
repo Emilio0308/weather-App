@@ -31,15 +31,15 @@ const Wheater = ({ weather , temp }) => {
         </article>
         <article className="seconArticle flex justify-around gap-2 rounded-xl overflow-hidden sm:flex-col">
           <div className="bg-blue-900/[0.5] flex-1 flex sm:w-[90px] backdrop-blur-sm">
-            <div>{weather.wind.speed}</div>
+            <div>{weather.wind.speed}m/s</div>
             <img src={`/img/wind.png`} alt="" />
           </div>
           <div className="bg-blue-900/[0.5] flex-1 flex sm:w-[90px] backdrop-blur-sm">
-            <div>{weather.main.pressure}</div>
+            <div>{weather.main.pressure} hPa</div>
             <img src={`/img/pressure.png`} alt="" />
           </div>
           <div className="bg-blue-900/[0.5] flex-1 flex sm:w-[90px] backdrop-blur-sm">
-            <div>{weather.main.humidity}</div>
+            <div>{weather.main.humidity} %</div>
             <img src={`/img/humidity.png`} alt="" />
           </div>
         </article>
