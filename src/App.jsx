@@ -35,7 +35,7 @@ function App() {
   const handleSearchCity = (e) =>{
     e.preventDefault()
     let city = e.target.city.value
-    let url = `http://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=5&appid=282d567b73c622bd33454284d9cbad6c`
+    let url = `https://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=5&appid=282d567b73c622bd33454284d9cbad6c`
     axios.get(url)
     .then((res)=> {
       setNewCity({lat: res.data[0].lat, long:res.data[0].lon})
