@@ -22,13 +22,13 @@ const GetTime = ({ inicio, fin, zona, city }) => {
   }, [inicio, fin, zona]);
 
   return (
-    <div className="text-2xl bg-blue-900/50 rounded-xl backdrop-blur-[5px] sm:min-w-[450px] p-1 relative">
-      <p>{`La hora actual en ${city} es ${
+    <div className="text-2xl bg-blue-900/50 rounded-xl backdrop-blur-[5px] sm:min-w-[450px] p-1 relative ">
+      <p className="z-40">{`La hora actual en ${city} es ${
         currentTime ? currentTime.toLocaleTimeString() : ""
       }`}</p>
 
-      {isDay ? <img className="sun" src="/img/sun.png" alt="" />
-      :<img className="moon" src="/img/moon.png" alt="" />
+      {isDay ? <img className="sun z-10" src="/img/sun.png" alt="" />
+      :<img className="moon z-10" src="/img/moon.png" alt="" />
       }
     </div>
   );

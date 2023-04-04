@@ -18,18 +18,18 @@
   }
 @keyframes orbit {
     0% {
-      transform: rotate(-25deg) translate(200px) rotate(0deg);
+      transform: rotate(-25deg) translate(100%) rotate(0deg);
     }
     100% {
-      transform: rotate(-160deg) translate(320px) rotate(180deg);
+      transform: rotate(-145deg) translate(250%) rotate(180deg);
     }
   }
 
   @keyframes move {
     0% {
-      transform: rotate(-160deg) translate(320px) rotate(0deg);
+      transform: rotate(-150deg) translate(250%) rotate(0deg);
     }
     100% {
-      transform: rotate(-25deg) translate(200px) rotate(180deg);
+      transform: rotate(-45deg) translate(145%) rotate(180deg);
     }
   }

@@ -14,8 +14,8 @@ const Wheater = ({ weather , temp }) => {
   }, [temp])
   
   return (
-    <section className="weatherContainer flex flex-col gap-5 items-center p-1  rounded-xl ">
-      <h1 className="text-center text-5xl">{weather.name}-{weather.sys.country}</h1>
+    <section className="weatherContainer flex flex-col gap-5 items-center p-1  rounded-xl">
+      <h1 className="text-center text-5xl z-40">{weather.name}-{weather.sys.country}</h1>
       {weather? <GetTime city ={weather.name} inicio={weather.sys.sunrise} fin={weather.sys.sunset} zona={weather.timezone} />: <Loader></Loader>}
       <section className="flex flex-col gap-5 sm:flex-row">
         <article className="bg-blue-900/50 p-5 rounded-xl backdrop-blur-[5px] sm:min-w-[450px]">
