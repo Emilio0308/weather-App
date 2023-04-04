@@ -1,0 +1,26 @@
+.App{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+   background-position: center;
+   background-size: cover;
+}
+
+input{
+    outline: none;
+}
+
+form > input {
+    
+    background: transparent;
+    border-bottom: 3px outset black;
+    backdrop-filter: blur(10px);
+    color: black;
+}
+
+form > input::placeholder {
+    color: rgb(58, 58, 58);
+}

@@ -1,0 +1,23 @@
+.weatherContainer{
+    display: flex;
+    flex-direction: column;
+}
+.seconArticle{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+.seconArticle > div{
+    height: 50px;
+    padding: 4px 8px;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+.weatherContainer > button{
+    width: 10rem;
+}

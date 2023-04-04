@@ -1,0 +1,35 @@
+
+.moon{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: orbit 3s linear forwards;
+}
+.sun{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: move 3s linear forwards;
+}
+.sun, .moon {
+    transition: opacity 2s ease-in-out;
+  }
+@keyframes orbit {
+    0% {
+      transform: rotate(-25deg) translate(200px) rotate(0deg);
+    }
+    100% {
+      transform: rotate(-160deg) translate(320px) rotate(180deg);
+    }
+  }
+
+  @keyframes move {
+    0% {
+      transform: rotate(-160deg) translate(320px) rotate(0deg);
+    }
+    100% {
+      transform: rotate(-25deg) translate(200px) rotate(180deg);
+    }
+  }
